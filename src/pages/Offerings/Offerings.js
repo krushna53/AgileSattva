@@ -1,22 +1,20 @@
-import React, { useState, useEffect } from 'react'
-import OfferingSlide from './OfferingSlide'
-import { client } from '../../client'
-
-
+import React, { useState, useEffect } from 'react';
+import OfferingSlide from './OfferingSlide';
+import { client } from '../../client';
 
 const Offerings = () => {
-
-  const [entry, setEntry] = useState([]);
+  const [parentEntries, setParentEntries] = useState([]);
 
   useEffect(() => {
     const fetchPage = async () => {
       try {
-        const response = await client.getEntries({
-          content_type: "offerings",
+        const parentResponse = await client.getEntries({
+          content_type: 'offerings',
+          "fields.type": 'Parent'
         });
-        console.log(response); // Check the response in the console
-        if (response.items.length) {
-          setEntry(response.items);
+        console.log(parentResponse); // Check the response in the console
+        if (parentResponse.items.length) {
+          setParentEntries(parentResponse.items);
         }
       } catch (error) {
         console.error(error);
@@ -27,20 +25,29 @@ const Offerings = () => {
   }, []);
 
   return (
-    <div className='Offerings'>
-      
-      {entry.map((item) => {
-        const { id, title, description } = item.fields
-        const image  = item.fields.image.fields.file.url
-        console.log(image)
-        return (
-          <OfferingSlide key={id} slideTitle={title} slideBg={image} slideDescription={description} />
-        )
-      })}
-    
-    </div>
+    <section className='offering'>
+      <div className='page_title'>
+        <h1>OFFERINGS</h1>
+      </div>
+      <div className='container'>
+        {parentEntries.map((parentItem) => {
+          const { id, title, description, image, subOfferings } = parentItem.fields;
+          const imageUrl = image.fields.file.url;
 
-  )
-}
+          return (
+            <div key={id} className='wrapper'>
+              <OfferingSlide
+                slideTitle={title}
+                slideBg={imageUrl}
+                slideDescription={description}
+                subOfferings={subOfferings}
+              />
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+};
 
-export default Offerings
+export default Offerings;
