@@ -12,11 +12,13 @@ import {
 
 const Footer = () => {
     return (
+        <footer>
         <div className='footer'>
             <div className='footer-container'>
+            <div className='footer_logo'>
                 <a href="/">
                     <img src={Logo} alt="logo" width="250px" height="250px" />
-                </a>
+                </a></div>
                 <div className='explore'>
                     <h4>EXPLORE</h4>
                     <div>
@@ -40,7 +42,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='Copyright'>
+            </div>
+            <div className='container'>
+            <div className='copyright'>
                 <h6>COPYRIGHT 2020 AGILESATTVA</h6>
                 <div className='handle'>
                     <a href="https://www.facebook.com/learnbuildteach/"
@@ -56,8 +60,9 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-            
-        </div>
+            </div>
+            </footer> 
+        
     )
 }
 
