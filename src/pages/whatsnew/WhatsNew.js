@@ -25,6 +25,8 @@ const WhatsNew = () => {
 
   return (
     <section className='whats_new'>
+    <div className='page_title'>
+    <h1>Whats New? </h1></div>
       <div className='container'>
         {entries.map((item, index) => {
           const imageUrl = item.fields.image.fields.file.url;
