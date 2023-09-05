@@ -24,15 +24,30 @@ const About = () => {
   }, []);
   return (
     <>
-      {
-        entries.map((items, index) => {
-          return (
-            <React.Fragment>
-
-            </React.Fragment>
-          )
-        })
-      }
+      <section className='about'>
+        <div className='container'>
+          {
+            entries.map((items, index) => {
+              const name = items.fields.name
+              const profileImg = items.fields.profileImage.fields.file.url
+              const richTextContent = items.fields.profileInfo;
+              return (
+                <React.Fragment key={index}>
+                  <div className='d-flex'>
+                    <div className='profile_img'>
+                      <img src={profileImg} alt={profileImg}></img>
+                    </div>
+                    <div className="rich-text-content">
+                      <h3>{name}</h3>
+                      {documentToReactComponents(richTextContent)}
+                    </div>
+                  </div>
+                </React.Fragment>
+              )
+            })
+          }
+        </div>
+      </section>
     </>
   )
 }
