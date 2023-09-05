@@ -37,7 +37,7 @@ nav {
 
 
 img {
-    height: 100vh;
+    height: auto;
     max-width: 100%;
     vertical-align: bottom;
 }

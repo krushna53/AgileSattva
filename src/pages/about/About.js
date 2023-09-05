@@ -1,61 +1,39 @@
-import React, { useState, useEffect, useCallback } from 'react'
-import { client } from '../../client'
-import AboutSlide from './AboutSlide'
-
-
+import React, { useState, useEffect } from 'react';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { client } from '../../client';
 
 const About = () => {
-  const [isAboutloading, setIsAboutLoading] = useState(false)
-  const [AboutSlides, setAboutSlides] = useState([])
-
-  const cleanUpAboutSlides = useCallback((rawData) => {
-    const cleanSlides = rawData.map((slide) => {
-      const { sys, fields } = slide
-      const { id } = sys
-      const slideTitle = fields.title
-      const slideDescription = fields.Description
-      const slideBg = fields.profilImage.fields.file.url
-      const updatedSlide = { id, slideTitle, slideBg, slideDescription }
-      return updatedSlide
-    })
-
-    setAboutSlides(cleanSlides)
-  }, [])
-
-  const getAboutSlides = useCallback(
-    async () => {
-      setIsAboutLoading(true)
-      try {
-        const respone = await client.getEntries({ content_type: 'about' })
-        const responeData = respone.items
-        if (responeData) {
-          cleanUpAboutSlides(responeData)
-        } else {
-          setAboutSlides([])
-        }
-        setIsAboutLoading(false)
-      } catch (error) {
-        console.log(error)
-        setIsAboutLoading(false)
-      }
-    }, [cleanUpAboutSlides]
-  )
+  const [entries, setEntries] = useState([]);
 
   useEffect(() => {
-    getAboutSlides()
-  }, [getAboutSlides])
-
+    const fetchEntries = async () => {
+      try {
+        const response = await client.getEntries({
+          content_type: 'about',
+        });
+        console.log(response); // Check the response in the console
+        if (response.items.length) {
+          setEntries(response.items);
+          setEntries(response.items.reverse())
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchEntries();
+  }, []);
   return (
-    <div className='about-container'>
-     
-      {AboutSlides.map((item) => {
-        const { id, slideTitle, slideBg, slideDescription } = item
-        return (
-          <AboutSlide key={id} slideTitle={slideTitle} slideBg={slideBg} slideDescription={slideDescription}/>
-        )
-      })}
-    
-    </div>
+    <>
+      {
+        entries.map((items, index) => {
+          return (
+            <React.Fragment>
+
+            </React.Fragment>
+          )
+        })
+      }
+    </>
   )
 }
 
