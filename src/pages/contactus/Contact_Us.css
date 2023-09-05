@@ -1,18 +1,26 @@
-.contact-container{
-    display: inline;
 
+.contact-container {
+  max-width: 100%;
+width: 98.5%;
+ 
 }
 
-
-h1{
-    padding: 50px 0;
-    background: #f9b418;
-    margin: 0;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    font-family: 'Oxygen', sans-serif;
-    line-height: 1.2;
-    text-rendering: optimizeLegibility;
-    font-weight: 500;
+h1 {
+  padding: 50px  ; 
+ background: #f9b418;
+  margin: auto;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: "Oxygen", sans-serif;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+  font-weight: 500;
+}
+.contact-body h2{
+padding: 20px;
+text-align: left;
+font-weight: 200;
+margin-top: 10px;
+    
 }

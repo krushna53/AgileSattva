@@ -31,6 +31,7 @@ function FormComponent() {
   return (
     <div className='form-container'>
       <form onSubmit={handleSubmit}>
+      <div className='row'>
         <label id='Name'>
           Your Name*:
           <input
@@ -50,6 +51,7 @@ function FormComponent() {
             onChange={handleInputChange}
           />
         </label>
+        </div>
         <br />
         <label id='Service'>
           Select Service:
