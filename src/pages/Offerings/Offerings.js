@@ -31,7 +31,7 @@ const Offerings = () => {
       </div>
       <div className='container'>
         {parentEntries.map((parentItem) => {
-          const { id, title, description, image, subOfferings } = parentItem.fields;
+          const { id, title, description, image, subOfferings , additionalInfo} = parentItem.fields;
           const imageUrl = image.fields.file.url;
 
           return (
@@ -41,6 +41,7 @@ const Offerings = () => {
                 slideBg={imageUrl}
                 slideDescription={description}
                 subOfferings={subOfferings}
+                additionalInfo={additionalInfo}
               />
             </div>
           );
