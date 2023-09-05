@@ -13,7 +13,7 @@ const OfferingSlide = (props) => {
                 const { title, description, file } = node.data.target.fields;
                 const imageUrl = file.url;
                 const altText = description || title || 'Image';
-                console.log(imageUrl);
+                console.log('Image URL:', imageUrl);
                 return (
                     <div className="custom-rich-text-image">
                         <img src={imageUrl} alt={altText} />

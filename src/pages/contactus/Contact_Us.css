@@ -1,26 +1,63 @@
-
-.contact-container {
-  max-width: 100%;
-width: 98.5%;
- 
+.contact-body {
+  padding: 50px 0;
 }
 
-h1 {
-  padding: 50px  ; 
- background: #f9b418;
+form .d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: auto;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 1.5em;
-  font-family: "Oxygen", sans-serif;
-  line-height: 1.2;
-  text-rendering: optimizeLegibility;
-  font-weight: 500;
+  gap: 5%;
 }
-.contact-body h2{
-padding: 20px;
-text-align: left;
-font-weight: 200;
-margin-top: 10px;
-    
+
+.contact-body h3 {
+  margin-bottom: 34px;
+  color: #666666;
+}
+
+.input-field {
+  margin: 40px 0;
+  width: 47%;
+}
+
+.input-field label,
+.text-area textarea {
+  padding: 0;
+  border: none;
+  outline: none;
+  margin: 11px 0;
+  display: block;
+}
+
+.input-field input,
+.text-area textarea,
+.input-field select {
+  line-height: 23px;
+  height: 44px;
+  border: none;
+  outline: none;
+  padding: 11px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  color: inherit;
+}
+
+.text-area textarea {
+  min-height: 176px;
+  resize: vertical;
+}
+
+.submit_btn {
+  width: 100%;
+  cursor: pointer;
+  line-height: 23px;
+  height: 44px;
+  padding: 11px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  color: inherit;
 }
