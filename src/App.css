@@ -41,15 +41,14 @@ body {
 }
 
 .slide_bg {
-    padding: 34px 23px;
-    background-color: #faed27;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    margin: 30px auto;
-    width: 25%;
-    align-items: center;
-
+  padding: 34px 23px;
+  background-color: #faed27;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  width: 25%;
+  align-items: center;
 }
 
 .slide_bg img {
@@ -88,41 +87,96 @@ body {
 }
 
 .vc_sep_line {
-    height: 1px;
-    border-top: 1px solid #EBEBEB;
-    border-color: #EBEBEB;
-    display: block;
+  height: 1px;
+  border-top: 1px solid #ebebeb;
+  border-color: #ebebeb;
+  display: block;
 }
 
 .whats_new .d-flex {
-    display: flex;
-    gap: 5%;
-    margin: 30px 0;
+  display: flex;
+  gap: 5%;
+  margin: 30px 0;
 }
 
 .whats_new_slide_bg {
-    padding: 56px 0px;
-    background-color: #faed27;
-    text-align: center;
-    width: 26%;
-    height: 100%;
-    border-radius: 10px;
+  padding: 56px 0px;
+  background-color: #faed27;
+  text-align: center;
+  width: 26%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .whats_new_slide_bg img {
-    width: 70px;
+  width: 70px;
 }
 
 .whats_new_slide_bg h3 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .rich-text-content a {
-    color: #89C4F4;
-    text-decoration: none;
-    font-size: 18px;
+  color: #89c4f4;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .rich-text-content a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px), (max-width: 360px) {
+  .slide_Wrap,
+  .slide_bg,
+  .reference,
+  .whats_new .d-flex,
+  .vc_sep_line {
+    flex-direction: column;
+
+    align-items: center;
+  }
+  body,
+  .slide_bg img,
+  .container,
+  .text_Wrap,
+  .whats_new_slide_bg img,
+  .slide_bg {
+    max-width: 100%;
+    margin: auto;
+  }
+  .slide_Wrap {
+    gap: 100px;
+  }
+  .slide_bg {
+    width: 100%;
+  }
+  .whats_new_slide_bg {
+    width: 100%;
+  }
+  .reference .d-flex {
+    text-align: center;
+    margin: auto;
+  }
+  .reference .d-flex h2 {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 22px;
+  }
+  .reference .wrapper {
+    width: 100%;
+  }
+  .rich-text-content {
+    margin: 20px;
+    padding: 10px;
+  }
+  .text_Wrap {
+    width: 100%;
+  }
+  .text_Wrap h2 {
+    text-align: left;
+  }
+  nav {
+    padding: 20px;
+  }
 }
