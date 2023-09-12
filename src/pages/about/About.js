@@ -1,19 +1,17 @@
-import React from "react"
-import Founders from "../../components/AboutUs/Founders"
-import AssociateConsultant from "../../components/AboutUs/AssociateConsultant"
+import React from "react";
+import TeamMember from "../../components/AboutUs/TeamMember";
 
 const About = () => {
-
   return (
     <>
-      <section className='about'>
-        <div className='container'>
-          <Founders />
-          <AssociateConsultant />
+      <section className="about">
+        <div className="container">
+          <TeamMember type="FOUNDERS" />
+          <TeamMember type="ASSOCIATE CONSULTANT" />
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
