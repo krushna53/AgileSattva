@@ -27,7 +27,7 @@ const Testimonials = () => {
 
   // Configure the settings for the slider
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

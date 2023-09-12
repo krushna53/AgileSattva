@@ -34,7 +34,7 @@ const OurApproach = () => {
               <React.Fragment key={index}>
                 <h2>{title}</h2>
                 <div className="d-flex">
-                  <div className="profile_img">
+                  <div className="approach_image">
                     <img src={image} alt={image}></img>
                   </div>
                   <div className="rich-text-content">
