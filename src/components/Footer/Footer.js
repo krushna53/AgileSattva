@@ -50,14 +50,17 @@ const Footer = () => {
                     <div className='handle'>
                         <a href="https://www.facebook.com/learnbuildteach/"
                             className="facebook social">
-                            <FontAwesomeIcon icon={faFacebook} size="1x" />
+                                <i class="fa-brands fa-facebook-f"></i>
+                            
                         </a>
                         <a href="https://www.twitter.com/jamesqquick" className="twitter social">
-                            <FontAwesomeIcon icon={faTwitter} size="1x" />
+                            {/* <FontAwesomeIcon icon={faTwitter} size="1x" /> */}
+                            <i class="fa-brands fa-twitter"></i>
                         </a>
                         <a href="https://www.instagram.com/learnbuildteach"
                             className="linkedin">
-                            <FontAwesomeIcon icon={faLinkedin} size="1x" />
+                            {/* <FontAwesomeIcon icon={faLinkedin} size="1x" /> */}
+                            <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </div>
                 </div>

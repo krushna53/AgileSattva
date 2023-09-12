@@ -84,10 +84,13 @@ const FormComponent = () => {
         </div>
         <div className="input-field">
           <label htmlFor="service">Select Service</label>
-          <select name="service" id="service"
+          <select
+            name="service"
+            id="service"
             value={service}
             onChange={(e) => setService(e.target.value)}
           >
+            <option value="select">Select an option</option>
             <option value="Agile coaching">Agile coaching</option>
             <option value="Agile transformation">Agile transformation</option>
             <option value="Agile training">Agile training</option>
@@ -95,10 +98,9 @@ const FormComponent = () => {
               Change management leadership coaching
             </option>
             <option value="Team coaching">Team coaching</option>
-            <option value="Leadership development">
-              Leadership development
-            </option>
+            <option value="Leadership development">Leadership development</option>
           </select>
+
         </div>
         <div className="text-area">
           <label htmlFor="message">Your Message</label>
