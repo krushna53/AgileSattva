@@ -146,15 +146,19 @@ body {
   padding: 5px;
 }
 
-.profile_img {
-  width: 40%;
+.about .profile_img {
+  width: 20%;
 }
 
 .profile_img img {
   width: 100%;
 }
+.about .rich-text-content {
+  width: 70%;
+  text-align: justify;
+}
 
-.rich-text-content {
+.OurApproach .rich-text-content {
   width: 50%;
   text-align: justify;
   margin: 20px;
@@ -171,13 +175,30 @@ body {
 }
 .OurApproach .d-flex {
   display: flex;
-  justify-content: center;
-  
+  justify-content: space-between;
 }
-.rich-text-content p {
+.OurApproach .rich-text-content p {
   margin: 10px;
   color: #ffff;
   font-size: 16px;
+}
+.approach_image {
+  width: 50%;
+}
+.testimonials h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 200;
+  margin: 20px;
+}
+.testimonials .rich-text-content h3 {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 200;
+  margin: 10px 0;
+}
+.testimonials .d-flex {
+  margin: 20px;
 }
 
 @media screen and (max-width: 768px), (max-width: 360px) {
@@ -186,7 +207,7 @@ body {
   .reference,
   .whats_new .d-flex,
   .vc_sep_line,
-  .OurApproach .d-flex {
+  .about .d-flex,.OurApproach .d-flex {
     flex-direction: column;
 
     align-items: center;
@@ -221,27 +242,29 @@ body {
   .reference .wrapper {
     width: 100%;
   }
-  .rich-text-content {
+  .whats_new .rich-text-content {
     margin: 20px;
     padding: 10px;
   }
-  .text_Wrap {
+ .offering .text_Wrap {
     width: 100%;
   }
-  .text_Wrap h2 {
+  .offering .text_Wrap h2 {
     text-align: left;
   }
   nav {
     padding: 20px;
   }
-  .page_title {
+  .offering .page_title {
     width: 96%;
   }
-  .profile_img {
+  .about .profile_img,
+  .about .rich-text-content,
+  .approach_image,
+  .OurApproach .rich-text-content {
     width: 100%;
   }
-  .rich-text-content{
-    width: 100%;
+  .testimonials.rich-text-content{
+    text-align: justify;
   }
 }
-
