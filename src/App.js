@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/Header/Navbar.js';
 import Footer from './components/Footer/Footer.js';
-import Home from './pages/home/Home.js'
+import Home from './pages/home/Home.jsx';
 import Offerings from './pages/Offerings/Offerings.js'
 import About from './pages/about/About.js'
 import WhatsNew from './pages/whatsnew/WhatsNew.js';

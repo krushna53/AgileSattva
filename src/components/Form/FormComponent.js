@@ -7,11 +7,11 @@ const FormComponent = () => {
         <div className='d-flex'>
           <div className='input-field'>
             <label htmlFor='name'>Your Name *</label>
-            <input type='text' id='name' required />
+            <input type='text' name='name' id='name' required />
           </div>
           <div className='input-field'>
             <label htmlFor='email'>Your Email *</label>
-            <input type='email' id='email' required />
+            <input type='email' name='email' id='email' required />
           </div>
         </div>
           <div className='input-field'>
