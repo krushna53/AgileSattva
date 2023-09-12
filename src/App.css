@@ -129,7 +129,13 @@ body {
 .rich-text-content a:hover {
   text-decoration: underline;
 }
-
+.about h2{
+  color: #f9b418;
+  margin-top: 35px;
+}
+.about p{
+  margin: 20px 0;
+}
 @media screen and (max-width: 768px), (max-width: 360px) {
   .slide_Wrap,
   .slide_bg,
