@@ -59,7 +59,7 @@ body {
   max-width: 100%;
   height: auto;
   width: 50%;
-  margin: 0 auto 23px;
+  margin:auto;
   vertical-align: bottom;
 }
 
@@ -219,6 +219,32 @@ body {
 .slick-next:before {
   color: #656565;
 }
+.Offerings h2{
+  text-align: center;
+  font-size:50px;
+  font-weight: 200;
+}
+.Offerings .slide_bg {
+  background-color: #fff;
+  border-radius: 50%;
+    border: 2px solid #faed27;
+    margin: 30px auto;
+    padding: 34px 23px;
+    display: block;
+}
+.Offerings .text_Wrap h2{
+  font-size: 18px;
+  margin: 20px;
+}
+.Offerings .text_Wrap p{
+  margin:20px;
+  width: 100%;
+}
+.Offerings .slide_bg a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 768px),
 (max-width: 360px) {
@@ -303,4 +329,8 @@ body {
   .testimonials.rich-text-content {
     text-align: justify;
   }
+
 }
+
+
+
