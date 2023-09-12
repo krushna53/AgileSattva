@@ -1,6 +1,7 @@
 .footer {
   background-color: #f9b418;
 }
+
 .footer-container {
   max-width: 100%;
   width: 90%;
@@ -10,9 +11,11 @@
   align-items: center;
   padding: 20px 0;
 }
+
 .footer_logo {
   width: 30%;
 }
+
 .footer_logo img {
   max-width: 100%;
   width: 250px;
@@ -23,6 +26,7 @@
   width: 45%;
   padding: 20px 10px;
 }
+
 .explore h4 {
   font-family: "Oxygen", sans-serif;
   font-size: 20px;
@@ -30,10 +34,12 @@
   font-weight: 300;
   padding-right: 20px;
 }
+
 #links {
   list-style: none;
   width: 50%;
 }
+
 #links li {
   padding: 10px 0;
   border-bottom: 1px solid #fff;
@@ -42,6 +48,7 @@
   box-sizing: border-box;
   font-size: 30px;
 }
+
 #links li a {
   text-decoration: none;
   font-size: 12px;
@@ -51,19 +58,21 @@
   color: #fff;
   text-align: center;
 }
-footer.container{
-    max-width: 100%;
-    width: 90%;
-    margin: auto;
+
+footer.container {
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 .copyright {
   display: flex;
-  justify-content:space-between;
-  align-items:center;
-  padding: 20px ;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 
 }
+
 .copyright h6 {
   font-size: 12px;
   font-family: serif;
@@ -71,42 +80,57 @@ footer.container{
   font-weight: 200;
 }
 
+.handle {
+  display: flex;
+  gap: 8px;
+}
+
 .handle a {
-  color:#fff;
-  gap: 10px;
-  font-size: 40px;
-  padding: 8px;
-  
+  background: rgba(34, 49, 63, 0.5);
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 5.5px 10px;
 }
-.handle a svg{
-    width: 30px;
-    height: 30px;
-    background-color: gray;
-    border-radius: 10px;
-    padding: 5px;
-}
+
 @media only screen and (max-width: 768px) {
-  .footer-container,.copyright{
+
+  .footer-container,
+  .copyright {
     flex-direction: column;
-
+    gap: 10px;
   }
-  .footer-container{
+
+  .footer-container {
     max-width: 100%;
-
-    
   }
-  .copyright h6{
+
+  .copyright h6 {
     text-align: center;
   }
 
- .footer_logo img {
+  .footer_logo img {
     max-width: 100%;
     height: auto;
   }
-.handle a {
-    text-align: center;
-}
-  
 
- 
+  .handle a {
+    text-align: center;
+  }
+
+  #links,
+  .explore {
+    width: 100%;
+  }
+
+  .testimonials  .slick-prev {
+    bottom: 0 !important;
+    top: auto !important;
+    left: 35% !important;
+  }
+  
+  .testimonials .slick-next {
+    bottom: 0 !important;
+    top: auto !important;
+    right: 45% !important;
+  }
 }
