@@ -26,7 +26,7 @@ body {
 
 .page_title {
   background-color: #f9b418;
-  padding: 50px 5px;
+  padding: 35px 5px;
   width: 99%;
 }
 
@@ -59,7 +59,7 @@ body {
   max-width: 100%;
   height: auto;
   width: 50%;
-  margin:auto;
+  margin: auto;
   vertical-align: bottom;
 }
 
@@ -219,36 +219,34 @@ body {
 .slick-next:before {
   color: #656565;
 }
-.Offerings h2{
+.Offerings h2 {
   text-align: center;
-  font-size:50px;
+  font-size: 50px;
   font-weight: 200;
 }
 .Offerings .slide_bg {
   background-color: #fff;
   border-radius: 50%;
-    border: 2px solid #faed27;
-    margin: 30px auto;
-    padding: 34px 23px;
-    display: block;
+  border: 2px solid #faed27;
+  margin: 30px auto;
+  padding: 34px 23px;
+  display: block;
 }
-.Offerings .text_Wrap h2{
+.Offerings .text_Wrap h2 {
   font-size: 18px;
   margin: 20px;
 }
-.Offerings .text_Wrap p{
-  margin:20px;
+.Offerings .text_Wrap p {
+  margin: 20px;
   width: 100%;
 }
-.Offerings .slide_bg a{
+.Offerings .slide_bg a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media screen and (max-width: 768px),
-(max-width: 360px) {
-
+@media screen and (max-width: 768px), (max-width: 360px) {
   .slide_Wrap,
   .slide_bg,
   .reference,
@@ -315,7 +313,9 @@ body {
     padding: 20px;
   }
 
-  .offering .page_title {
+  .offering,
+  .whats_new,
+  .contact_us, .page_title {
     width: 96%;
   }
 
@@ -329,8 +329,4 @@ body {
   .testimonials.rich-text-content {
     text-align: justify;
   }
-
 }
-
-
-
