@@ -3,8 +3,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     background: #fff;
-    padding: 20px 80px;
-    position: relative;
+    padding: 20px 50px;
+
     width: 100%;
     box-shadow: 0 0 7px -2px rgba(0,0,0,0.3);
     z-index: 1;

@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { client } from '../../client';
+import React, { useState, useEffect } from "react";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { client } from "../../client";
 
-const TeamMember = ({ type }) => {
+const TeamMember = ({ type, headingLevel }) => {
   const [entries, setEntries] = useState([]);
 
   useEffect(() => {
     const fetchEntries = async () => {
       try {
         const response = await client.getEntries({
-          content_type: 'about',
-          'fields.type': type,
+          content_type: "about",
+          "fields.type": type,
         });
         console.log(response); // Check the response in the console
         if (response.items.length) {
@@ -24,6 +24,8 @@ const TeamMember = ({ type }) => {
     fetchEntries();
   }, [type]);
 
+  const Heading = `h${headingLevel}`;
+
   return (
     <>
       <h2>{type}</h2>
@@ -33,12 +35,12 @@ const TeamMember = ({ type }) => {
         const richTextContent = items.fields.profileInfo;
         return (
           <React.Fragment key={index}>
-            <div className='d-flex'>
-              <div className='profile_img'>
+            <div className="d-flex">
+              <div className="profile_img">
                 <img src={profileImg} alt={profileImg}></img>
               </div>
-              <div className='rich-text-content'>
-                <h3>{name}</h3>
+              <div className="rich-text-content">
+                <Heading>{name}</Heading>
                 {documentToReactComponents(richTextContent)}
               </div>
             </div>

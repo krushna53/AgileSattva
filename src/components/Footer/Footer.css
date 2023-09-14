@@ -28,11 +28,9 @@
 }
 
 .explore h4 {
-  font-family: "Oxygen", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   color: #ffffff;
-  font-weight: 300;
-  padding-right: 20px;
+  font-weight: 500;
 }
 
 #links {
@@ -51,12 +49,13 @@
 
 #links li a {
   text-decoration: none;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 12.8px;
+  font-weight: 500;
   color: #000;
   transition: 0.3s ease-in-out;
   color: #fff;
   text-align: center;
+  font-family: "Oxygen", sans-serif;
 }
 
 footer.container {
@@ -70,14 +69,13 @@ footer.container {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-
 }
 
 .copyright h6 {
-  font-size: 12px;
-  font-family: serif;
-  color: DARKGRAY;
-  font-weight: 200;
+  font-size: 12.6px;
+  font-family: "Lora", serif;
+  color: #656565;
+  font-weight: 400;
 }
 
 .handle {
@@ -93,7 +91,6 @@ footer.container {
 }
 
 @media only screen and (max-width: 768px) {
-
   .footer-container,
   .copyright {
     flex-direction: column;
@@ -122,12 +119,12 @@ footer.container {
     width: 100%;
   }
 
-  .testimonials  .slick-prev {
+  .testimonials .slick-prev {
     bottom: 0 !important;
     top: auto !important;
     left: 35% !important;
   }
-  
+
   .testimonials .slick-next {
     bottom: 0 !important;
     top: auto !important;
