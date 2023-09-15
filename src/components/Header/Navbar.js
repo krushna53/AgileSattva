@@ -11,6 +11,7 @@ class Navbar extends Component{
   render() {
   return (
     <>
+     
     <nav>
       <a href = "/">
         <img src={Logo} alt="logo" width="250px" height="250px" />
@@ -39,6 +40,7 @@ class Navbar extends Component{
         className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
       </div>
     </nav>
+    
     <Outlet />
     </>
   )
