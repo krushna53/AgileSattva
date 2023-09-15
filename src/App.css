@@ -69,7 +69,8 @@ body {
   margin: auto;
   text-align: justify;
 }
-.offering .wrapper:last-child .slide_Wrap{
+
+.offering .wrapper:last-child .slide_Wrap {
   flex-direction: row-reverse;
 }
 
@@ -140,15 +141,18 @@ body {
   font-size: 34px;
   font-weight: 700;
 }
+
 .about h3 {
   font-size: 36px;
   font-weight: 500;
 }
+
 .about h4,
 .offering h2 {
   font-size: 24px;
   font-weight: 500;
 }
+
 .about p {
   margin: 20px 0;
 }
@@ -233,44 +237,63 @@ body {
 .slick-next:before {
   color: #656565;
 }
-.Offerings{
+
+.Offerings {
   padding: 50px 0px;
 }
+
 .Offerings h2 {
   text-align: center;
   font-size: 54px;
   font-weight: 500;
   line-height: 1.2;
 }
+
 .Offerings .slide_bg {
   background-color: #fff;
-  border-radius: 50%;
   border: 2px solid #faed27;
   margin: 30px auto;
-  padding: 34px 23px;
-  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
 }
+
+.Offerings .slide_bg img {
+  max-width: 100%;
+  /* Ensure the image fits within the circular box */
+  height: auto;
+  width: auto;
+}
+
 .Offerings .text_Wrap h2 {
   font-size: 24px;
   margin: 10px 0px 20px 0px;
 }
+
 .Offerings .text_Wrap {
   width: 100%;
   margin: 20px 0px;
 }
+
 .Offerings .slide_bg a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Offerings .text_Wrap .vc_sep_line{
+
+.Offerings .text_Wrap .vc_sep_line {
   height: 1px;
-    border-top: 2px solid #ebebeb;
-    border-color: #f1c40f;
-    display: block;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 20px;
+  border-top: 5px solid #ebebeb;
+  border-color: #f1c40f;
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 20px;
 
 }
 
@@ -278,22 +301,24 @@ p {
   color: #918a8a;
   font-size: 16px;
 }
+
 h1,
 h2,
 h3,
 h4 {
   font-family: "Oxygen", sans-serif;
 }
-@media screen and (max-width: 768px), (max-width: 360px) {
+
+@media screen and (max-width: 768px),
+(max-width: 360px) {
+
   .slide_Wrap,
   .slide_bg,
   .reference,
   .whats_new .d-flex,
-  .vc_sep_line,
   .about .d-flex,
   .OurApproach .d-flex {
     flex-direction: column;
-
     align-items: center;
   }
 
@@ -307,10 +332,12 @@ h4 {
     margin: auto;
   }
 
-  .slide_Wrap {
-    gap: 100px;
+ .offering .slide_Wrap {
+    gap: 50px;
   }
-
+  .offering .vc_sep_line{
+    padding: 10px 0;
+  }
   .slide_bg {
     width: 100%;
   }
@@ -346,11 +373,6 @@ h4 {
   .offering .text_Wrap h2 {
     text-align: left;
   }
-
-  nav {
-    padding: 20px;
-  }
-
   .offering,
   .whats_new,
   .contact_us,
@@ -367,5 +389,8 @@ h4 {
 
   .testimonials.rich-text-content {
     text-align: justify;
+  }
+  .offering .wrapper:last-child .slide_Wrap{
+    flex-direction: column;
   }
 }
