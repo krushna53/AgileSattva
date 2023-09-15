@@ -44,6 +44,7 @@ const Offerings = () => {
                     </div>
                     <div className="text_Wrap">
                       <h2>{title}</h2>
+                      <span class="vc_sep_line"></span>
                       <p>{richTextContent}</p>
                       {documentToReactComponents(additionalInfo)}
                     </div>
