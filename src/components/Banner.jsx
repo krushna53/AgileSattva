@@ -45,14 +45,24 @@ const Banner = () => {
   return (
     <>
       <div className="home">
-        <Slide>
-          {HomeSlides.map((item) => {
-            const { id, slideTitle, slideBg } = item;
-            return (
-              <HomeSlide key={id} slideTitle={slideTitle} slideBg={slideBg} />
-            );
-          })}
-        </Slide>
+      
+          {HomeSlides.length > 0 ? (
+            <Slide>
+              {HomeSlides.map((item) => {
+                const { id, slideTitle, slideBg } = item;
+                return (
+                  <HomeSlide
+                    key={id}
+                    slideTitle={slideTitle}
+                    slideBg={slideBg}
+                  />
+                );
+              })}
+            </Slide>
+          ) : (
+            <p>Loading...</p> // You can replace this with a loading indicator or message
+          )}
+        
       </div>
     </>
   );
