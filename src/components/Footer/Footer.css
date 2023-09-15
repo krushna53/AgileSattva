@@ -120,13 +120,13 @@ footer.container {
   }
 
   .testimonials .slick-prev {
-    bottom: 0 !important;
+    bottom: -33px !important;
     top: auto !important;
     left: 35% !important;
   }
 
   .testimonials .slick-next {
-    bottom: 0 !important;
+    bottom: -33px !important;
     top: auto !important;
     right: 45% !important;
   }
