@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { client } from "../client";
 import { Link } from "react-router-dom";
-
 const Offerings = () => {
   const [entries, setEntries] = useState([]);
 
   useEffect(() => {
+  
     const fetchEntries = async () => {
       try {
         const response = await client.getEntries({
@@ -24,6 +24,7 @@ const Offerings = () => {
     };
     fetchEntries();
   }, []);
+  
   return (
     <>
       <section className="Offerings">
@@ -38,8 +39,8 @@ const Offerings = () => {
                 <React.Fragment key={id}>
                   <div>
                     <div className="slide_bg">
-                      <Link to='offerings'>
-                      <img src={imageUrl} alt="slideBg" />
+                      <Link to="offerings">
+                        <img src={imageUrl} alt="slideBg" />
                       </Link>
                     </div>
                     <div className="text_Wrap">

@@ -2,6 +2,7 @@ import React from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
 import './Offerings.css';
+import SubOfferingChild from './SubOfferingChild';
 
 const OfferingSlide = (props) => {
     const { id, slideTitle, slideBg, slideDescription, subOfferings, additionalInfo } = props;
@@ -22,6 +23,23 @@ const OfferingSlide = (props) => {
             },
         },
     };
+
+    // Function to render the custom HTML structure
+    const renderCustomStructure = (index) => (
+        <div key={index} className="wrapper">
+            <span className="vc_sep_line"></span>
+            <div className="custom-html-structure d-flex">
+                <img
+                    src={subOfferings[index].fields.image.fields.file.url}
+                    alt={subOfferings[index].fields.title}
+                />
+                <div>
+                    <h2>{subOfferings[index].fields.title}</h2>
+                    <p>{subOfferings[index].fields.description}</p>
+                </div>
+            </div>
+        </div>
+    );
 
     return (
         <React.Fragment key={id}>
@@ -50,6 +68,9 @@ const OfferingSlide = (props) => {
                                     <div>
                                         <h2>{subOffering.fields.title}</h2>
                                         <p>{subOffering.fields.description}</p>
+                                        {index === 0 && slideTitle === "BUILDING ORGANIZATION EFFECTIVENESS" ? (
+                                           <SubOfferingChild/>
+                                        ) : null}
                                     </div>
                                 </div>
                             </div>

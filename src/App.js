@@ -7,6 +7,7 @@ import Offerings from './pages/Offerings/Offerings.js'
 import About from './pages/about/About.js'
 import WhatsNew from './pages/whatsnew/WhatsNew.js';
 import ContactUs from './pages/contactus/ContactUs.js';
+import '../src/dist/aos.css'
 
 import './App.css'
 

@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos';
 import './Home.css'
 
 const HomeSlide = (props) => {
-    const { id, slideTitle, slideBg } = props
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+      }, []);
+    const {  slideTitle, slideBg } = props
     return (
         <div className='slideWrap' style={{ backgroundImage: `url(${slideBg})` }}>
             <div className='textWrap'>
-                <h2>{slideTitle}</h2>
+                <h2 data-aos="fade-up">{slideTitle}</h2>
             </div>
         </div>
 
