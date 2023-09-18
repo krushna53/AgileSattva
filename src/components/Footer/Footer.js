@@ -2,6 +2,7 @@ import React from 'react'
 import "./Footer.css"
 import { Link } from 'react-router-dom';
 import Logo from "../../images/logo2.png"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faYoutube,
@@ -12,6 +13,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer>
             <div className='footer'>
@@ -46,12 +49,11 @@ const Footer = () => {
             </div>
             <div className='container'>
                 <div className='copyright'>
-                    <h6>COPYRIGHT 2020 AGILESATTVA</h6>
+                    <h6>COPYRIGHT {currentYear } AGILESATTVA</h6>
                     <div className='handle'>
                         <a href="https://www.facebook.com/learnbuildteach/"
                             className="facebook social">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            
+                                <i class="fa-brands fa-facebook-f"></i>       
                         </a>
                         <a href="https://www.twitter.com/jamesqquick" className="twitter social">
                             {/* <FontAwesomeIcon icon={faTwitter} size="1x" /> */}

@@ -28,10 +28,12 @@ const Testimonials = () => {
   // Configure the settings for the slider
   const sliderSettings = {
     dots: false,
-    infinite: true,
+    infinite: true, 
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,          // Enable autoplay
+    autoplaySpeed: 3000,    // Set the autoplay speed in milliseconds (e.g., 3 seconds)
   };
 
   return (
