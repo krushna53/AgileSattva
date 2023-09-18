@@ -53,15 +53,14 @@ form .d-flex {
 }
 
 .submit_btn {
-  width: 100%;
   cursor: pointer;
   line-height: 23px;
   height: 44px;
   padding: 11px 16px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  width: 100%;
   -webkit-box-sizing: border-box !important;
   box-sizing: border-box !important;
   color: #ffff;
+  font-size: 18px;
   background: #ffb100;
 }
