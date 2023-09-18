@@ -62,5 +62,6 @@ form .d-flex {
   width: 100%;
   -webkit-box-sizing: border-box !important;
   box-sizing: border-box !important;
-  color: inherit;
+  color: #ffff;
+  background: #ffb100;
 }
