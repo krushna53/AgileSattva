@@ -24,11 +24,13 @@
     @media(max-width: 760px) and (orientation: landscape) {
         min-height: 110vh;
         padding: 70px 20px;
+        
     }
 
     @media(max-width: 760px) and (orientation: portrait) {
         min-height: 80vh;
         padding: 70px 20px;
+        align-items: unset;
     }
 }
 
