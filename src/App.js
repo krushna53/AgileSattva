@@ -7,13 +7,30 @@ import Offerings from './pages/Offerings/Offerings.js'
 import About from './pages/about/About.js'
 import WhatsNew from './pages/whatsnew/WhatsNew.js';
 import ContactUs from './pages/contactus/ContactUs.js';
-import '../src/dist/aos.css'
+import '../src/dist/aos.css';
+import { Helmet } from 'react-helmet';
 
 import './App.css'
 
 const App = () => {
   return (
     <>
+ {/* Google Tag Manager - Script in Head */}
+ <Helmet>
+        <script>
+          {`
+            (function(w,d,s,l,i){
+              w[l]=w[l]||[];
+              w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});
+              var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+              f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MHRQX28M');
+          `}
+        </script>
+      </Helmet>
 
       <BrowserRouter>
         <Navbar />
