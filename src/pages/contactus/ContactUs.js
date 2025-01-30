@@ -1,5 +1,5 @@
 import React from "react";
-import FormComponent from "../../components/Form/FormComponent";
+import HubSpotForm from "../../components/Form/HubSpotForm";
 import "./Contact_Us.css";
 
 const ContactUs = () => {
@@ -12,7 +12,7 @@ const ContactUs = () => {
       <div className="contact-body">
         <h3>DROP US A LINE</h3>
         <div className="contact-main">
-          <FormComponent />
+          <HubSpotForm />
         </div>
       </div>
       </div>
