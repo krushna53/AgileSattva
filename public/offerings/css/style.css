@@ -197,10 +197,10 @@ p {
 
 .home-hero-content .section-sub-title {
   margin-bottom: 40px;
-  position: relative;font-size: 18px;
+  position: relative;font-size: 28px;
 }
 .home-hero-content p {
- font-size: 18px;
+ font-size: 24px;
 }
 .home-hero-content .section-sub-title::before {
   content: '';
@@ -211,6 +211,9 @@ p {
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
+}
+.section-title-area p{
+  font-size: 20px;
 }
 .about-area .about-img {
   margin-left: 60px;
@@ -231,7 +234,7 @@ p {
 }
 .feature-block .feature-box p {
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 20px;
 }
 .feature-block .feature-box strong {
   display: block;
@@ -239,7 +242,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   color: #0a3376;
-  font-size: 18px;
+  font-size: 24px;
 }
 .feature-block .feature-box .feature-icon img {
   width: 80px;
@@ -271,9 +274,10 @@ p {
 }
 .organizations-box .organizations-text p {
   margin-bottom: 0;
+  font-size: 20px;
 }
 .our-approach-area {
-  background-image: url(../images/aprouch-bg.jpg);
+  background-image: url(../images/consulting2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -290,11 +294,11 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   color: rgb(10, 51, 118);
-  font-size: 18px;
+  font-size:24px;
 }
 .our-approach-area .approach-box p {
   margin-bottom: 0px;
-  font-size: 16px;
+  font-size: 20px;
 }
 .our-approach-area .approach-box .approach-icon{ margin-bottom: 0px;}
 .our-approach-area .approach-box .approach-icon img {
@@ -307,10 +311,16 @@ p {
   display: grid;
   align-content: space-between;
 }
+.accordion-body p{
+  font-size: 20px;
+}
 .success-stories-area .success-stories-box h4 {
-  font-size: 18px;
+  font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 12px;
+}
+.success-stories-box p{
+  font-size: 20px;
 }
 .success-stories-area .success-stories-box strong {
   font-weight: 600;
@@ -400,11 +410,13 @@ bottom: 0;position:relative;}
 width: 80px;margin-bottom:10px;}
 .business-need-area .business-box .business-img img{width:60px;}
 
-.business-need-area .business-box ul li{color:#fff;margin-bottom:7px;}
+.business-need-area .business-box ul li{color:#fff;margin-bottom:7px;
+font-size: 20px;
+}
 .business-need-area .business-box ul li:last-child{margin-bottom:0px;}
 .business-need-area .business-box ul{padding-left:15px;}
 .deeper-systemic-area {
-  background-image: url(../images/deeper.jpg);
+  background-image: url(../images/bootcamp2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -414,17 +426,25 @@ width: 80px;margin-bottom:10px;}
  background: #fff;height:100%;
  
 }
+.row .col-md-4:first-of-type .business-box .business-img img {
+  transform: rotate(182deg);
+}
+
+
 .deeper-systemic-area .deeper-systemic-box strong {
   display: block;
   margin-bottom: 9px;
   font-weight: 600;
   text-transform: uppercase;
   color: rgb(10, 51, 118);
-  font-size: 18px;
+  font-size: 24px;
 }
 .deeper-systemic-area .deeper-systemic-box p {
   margin-bottom: 0px;
-  font-size: 16px;
+  font-size: 20px;
+}
+.team-transformations-box p{
+  font-size: 20px;
 }
 .deeper-systemic-area .deeper-systemic-box ul li {
   margin-bottom: 7px;
@@ -441,6 +461,9 @@ width: 80px;margin-bottom:10px;}
   border: 2px solid #0a3376;
   box-shadow: none;
   background: transparent;
+}
+.consulting-area .section-sub-title{
+  font-size: 28px !important; 
 }
 .program-structure-area .nav.nav-tabs .nav-link {
   color: #0a3376;
@@ -466,7 +489,7 @@ width: 80px;margin-bottom:10px;}
   margin: 0;
 }
 .program-structure-area .program-box ul li {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 8px;
   position: relative;
   display: block;
@@ -496,14 +519,14 @@ width: 80px;margin-bottom:10px;}
 }
 .should-attend-area .should-attend-box strong {
   font-weight: 600;
-  text-transform: uppercase;color:#0a3376;display:block;margin-bottom:15px;font-size: 18px;
+  text-transform: uppercase;color:#0a3376;display:block;margin-bottom:15px;font-size: 24px;
 }
 .should-attend-area .should-attend-box ul {
   padding: 0;
   margin: 0;
 }
 .should-attend-area .should-attend-box ul li {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 8px;
   position: relative;
   display: block;
@@ -607,10 +630,15 @@ width: 80px;margin-bottom:10px;}
   width: 100%;
 }
 .consulting-area .section-title-area p {
-  font-size: 18px;
+  font-size: 24px;
 }
-.collaborating-area .section-title-area p {
-  font-size: 18px;
+.collaborating-area
+.section-title-area p{
+  font-size: 24px;
+}
+.collaborating-area
+.section-sub-title{
+  font-size: 28px !important;
 }
 /* Responsive Css*/
 
